@@ -1,0 +1,45 @@
+{
+  "id": "sf-254-v1",
+  "name": "SF-254 Architect-Engineer and Related Services Questionnaire",
+  "version": "1.0",
+  "category": "government",
+  "description": "Standard Form 254 for Architect-Engineer and Related Services Questionnaire",
+  "formIdentifiers": [
+    {
+      "type": "form_number",
+      "value": "SF-254",
+      "required": true
+    }
+  ],
+  "fieldDefinitions": [
+    {
+      "id": "firm_name",
+      "name": "firm_name",
+      "type": "text",
+      "label": "Firm Name",
+      "required": true
+    },
+    {
+      "id": "year_established",
+      "name": "year_established",
+      "type": "number",
+      "label": "Year Established",
+      "required": true
+    },
+    {
+      "id": "ein",
+      "name": "ein",
+      "type": "text",
+      "label": "Employer Identification Number",
+      "required": true
+    }
+  ],
+  "validationRules": [],
+  "layoutMetadata": {
+    "pageCount": 2,
+    "pageSize": {
+      "width": 612,
+      "height": 792
+    }
+  }
+}

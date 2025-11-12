@@ -1,0 +1,89 @@
+{
+  "id": "sf-330-v1",
+  "name": "SF-330 Architect-Engineer Qualifications",
+  "version": "1.0",
+  "category": "government",
+  "description": "Standard Form 330 for Architect-Engineer Qualifications",
+  "formIdentifiers": [
+    {
+      "type": "form_number",
+      "value": "SF-330",
+      "required": true
+    },
+    {
+      "type": "title",
+      "value": "Architect-Engineer Qualifications",
+      "required": true
+    }
+  ],
+  "fieldDefinitions": [
+    {
+      "id": "firm_name",
+      "name": "firm_name",
+      "type": "text",
+      "label": "Firm Name",
+      "required": true,
+      "aliases": ["company_name", "business_name"]
+    },
+    {
+      "id": "point_of_contact",
+      "name": "point_of_contact",
+      "type": "text",
+      "label": "Point of Contact",
+      "required": true
+    },
+    {
+      "id": "address",
+      "name": "address",
+      "type": "text",
+      "label": "Address",
+      "required": true
+    },
+    {
+      "id": "phone",
+      "name": "phone",
+      "type": "phone",
+      "label": "Telephone Number",
+      "required": true
+    },
+    {
+      "id": "email",
+      "name": "email",
+      "type": "email",
+      "label": "Email Address",
+      "required": true
+    },
+    {
+      "id": "duns_number",
+      "name": "duns_number",
+      "type": "text",
+      "label": "DUNS Number",
+      "required": true
+    }
+  ],
+  "validationRules": [
+    {
+      "id": "required_firm_name",
+      "type": "field",
+      "fields": ["firm_name"],
+      "rule": "required",
+      "errorMessage": "Firm name is required",
+      "severity": "error"
+    },
+    {
+      "id": "valid_email",
+      "type": "field",
+      "fields": ["email"],
+      "rule": "email",
+      "errorMessage": "Valid email address is required",
+      "severity": "error"
+    }
+  ],
+  "layoutMetadata": {
+    "pageCount": 3,
+    "pageSize": {
+      "width": 612,
+      "height": 792
+    }
+  }
+}

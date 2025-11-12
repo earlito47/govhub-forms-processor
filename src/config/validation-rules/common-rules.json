@@ -1,0 +1,35 @@
+{
+  "rules": {
+    "email": {
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "message": "Please enter a valid email address"
+    },
+    "phone": {
+      "pattern": "^[\\d\\s\\-\\(\\)]+$",
+      "minLength": 10,
+      "message": "Please enter a valid phone number"
+    },
+    "ssn": {
+      "pattern": "^\\d{3}-\\d{2}-\\d{4}$",
+      "message": "Please enter SSN in format XXX-XX-XXXX"
+    },
+    "ein": {
+      "pattern": "^\\d{2}-\\d{7}$",
+      "message": "Please enter EIN in format XX-XXXXXXX"
+    },
+    "zip": {
+      "pattern": "^\\d{5}(-\\d{4})?$",
+      "message": "Please enter a valid ZIP code"
+    },
+    "date": {
+      "pattern": "^\\d{2}/\\d{2}/\\d{4}$",
+      "message": "Please enter date in MM/DD/YYYY format"
+    }
+  },
+  "crossFieldRules": {
+    "dateRange": {
+      "description": "End date must be after start date",
+      "applies": ["start_date", "end_date"]
+    }
+  }
+}

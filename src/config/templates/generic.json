@@ -1,0 +1,17 @@
+{
+  "id": "generic-v1",
+  "name": "Generic Form Template",
+  "version": "1.0",
+  "category": "custom",
+  "description": "Generic template for unrecognized forms",
+  "formIdentifiers": [],
+  "fieldDefinitions": [],
+  "validationRules": [],
+  "layoutMetadata": {
+    "pageCount": 1,
+    "pageSize": {
+      "width": 612,
+      "height": 792
+    }
+  }
+}
